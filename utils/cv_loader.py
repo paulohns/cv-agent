@@ -4,7 +4,14 @@ import tempfile
 
 def load_cv(file):
     if file.type == "application/pdf":
-        loader = PyPDFLoader(file)
+        
+        # Salva o conteúdo do arquivo temporariamente
+        with tempfile.NamedTemporaryFile(delete=False, suffix=".pdf") as tmp:
+            tmp.write(file.read())
+            tmp_path = tmp.name
+
+        # Usa o caminho temporário no loader
+        loader = PyPDFLoader(tmp_path)
     elif file.type.startswith("image/"):
         with tempfile.NamedTemporaryFile(delete=False, suffix=".png") as tmp:
             tmp.write(file.read())
