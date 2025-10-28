@@ -1,6 +1,6 @@
 streamlit
-langchain
-langchain-community
+langchain<=0.1.16
+langchain-community<=0.1.16
 groq
 python-dotenv
 PyPDF2
@@ -9,6 +9,7 @@ pytesseract
 Pillow
 beautifulsoup4
 sentence-transformers
+numpy
 
 # Dependências RAG
 faiss-cpu
