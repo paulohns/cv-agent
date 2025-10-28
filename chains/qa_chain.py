@@ -1,6 +1,6 @@
 from langchain.chains import ConversationalRetrievalChain
 from langchain.memory import ConversationBufferMemory
-from langchain.chat_models import ChatGroq
+from langchain_groq import ChatGroq
 import os
 from dotenv import load_dotenv
 
