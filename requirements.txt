@@ -1,5 +1,6 @@
 streamlit
 langchain<=0.1.16
+langchain-groq<=0.0.8
 groq
 python-dotenv
 PyPDF2
