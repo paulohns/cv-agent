@@ -9,7 +9,7 @@ load_dotenv()
 def build_qa_chain(vectorstore):
     memory = ConversationBufferMemory(memory_key="chat_history", return_messages=True)
     llm = ChatGroq(
-        model="mixtral-8x7b",
+        model="llama-3.3-70b-versatile",
         temperature=0.3,
         api_key=os.getenv("GROQ_API_KEY")
     )
