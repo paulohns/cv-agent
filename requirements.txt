@@ -1,0 +1,13 @@
+streamlit
+langchain
+langchain-community
+groq
+python-dotenv
+PyPDF2
+pdfplumber
+pytesseract
+Pillow
+unstructured
+beautifulsoup4
+faiss-cpu
+sentence-transformers
